@@ -6,11 +6,9 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: cd ./node/nodeproject/myexp
-      - run: npm install
+      - run: sudo npm install
       - run: cd ../../..
       - run: pwd
       - run: docker-compose -v
-      - run: |
-          sudo su &&
-          docker-compose up -d
-#      - run: docker-compose up -d # run the  command
+      - run: sudo su
+      - run: docker-compose up -d # run the  command
