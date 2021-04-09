@@ -5,8 +5,7 @@ jobs:
       - image: cimg/node:14.10.1 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
-      - run: sudo su
       - run: cd ./node/nodeproject/myexp
       - run: npm install
       - run: cd /
-      - run: docker-compose up -d # run the  command
+      - run: sudo docker-compose up -d # run the  command
