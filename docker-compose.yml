@@ -1,0 +1,13 @@
+version: "3.6"
+services: 
+  express:
+    build: ./node
+    restart: always
+    ports:
+      - 3000:3000
+    links:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    expose:
+      - "27017"
