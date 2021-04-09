@@ -11,6 +11,7 @@ jobs:
       - run: pwd
       - run: docker-compose -v
       - run: whoami
+      - run: sudo gpasswd -a circleci docker
       - run: sudo su root
       - run: docker images
       - run: docker-compose up -d # run the  command
