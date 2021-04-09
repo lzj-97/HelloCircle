@@ -10,6 +10,7 @@ jobs:
       - run: cd ../../..
       - run: pwd
       - run: docker-compose -v
+      - run: who
       - run: sudo su root
       - run: docker images
       - run: docker-compose up -d # run the  command
