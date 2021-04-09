@@ -10,5 +10,5 @@ jobs:
       - run: cd ../../..
       - run: pwd
       - run: docker-compose -v
-      - run: docker images
+      - run: sudo docker images
       - run: sudo docker-compose up -d # run the  command
