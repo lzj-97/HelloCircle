@@ -8,4 +8,6 @@ jobs:
       - run: cd ./node/nodeproject/myexp
       - run: npm install
       - run: cd ../../..
-      - run: sudo docker-compose up -d # run the  command
+      - run: pwd
+      - run: sudo su
+      - run: docker-compose up -d # run the  command
