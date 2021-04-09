@@ -9,5 +9,4 @@ jobs:
       - run: npm install
       - run: cd ../../..
       - run: pwd
-      - run: sudo su
       - run: docker-compose up -d # run the  command
